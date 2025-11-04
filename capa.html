@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo - Escrevivências</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://img.freepik.com/fotos-premium/papel-de-parede-com-simbolos-tribais_1134901-393641.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            height: 100vh;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+
+        .login-wrapper {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .login-box {
+            background-color: #fcf2f2;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+            max-width: 520px;
+            text-align: center;
+        }
+
+        .login-box h1 {
+            color: #251717;
+            margin-bottom: 10px;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #5c3a2c;
+            margin-bottom: 20px;
+        }
+
+        .login-box p {
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: justify;
+            color: #2a1a1a;
+        }
+
+        .login-box button {
+            margin-top: 30px;
+            background-color: #3d1f1f;
+            color: #f7f3f3;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-box button:hover {
+            background-color: #5a2e2e;
+        }
+
+        @media (max-width: 600px) {
+            .login-box {
+                padding: 30px 20px;
+            }
+
+            .login-box h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="login-wrapper">
+        <div class="login-box">
+            <h1>Bem-vindo(a)!</h1>
+            <p class="quote">“Escrevivência não é ficção. É a nossa vida sendo contada por nós mesmos.”</p>
+            <p>
+                Este site é um espaço dedicado a valorizar e divulgar a produção literária de autores e autoras negras do Brasil.
+                Aqui você encontrará biografias, frases marcantes e a história de nomes que fazem parte da resistência, da cultura
+                e da construção de uma literatura potente, representativa e transformadora.
+            </p>
+            <p>
+                Navegue pelo conteúdo, conheça os autores e inspire-se com suas escrevivências.
+            </p>
+            <button onclick="window.location.href='index.html'">Entrar</button>
+        </div>
+    </div>
+</body>
+</html>
